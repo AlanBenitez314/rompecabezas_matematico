@@ -1,4 +1,4 @@
-N = 2023**100
+N = 10**6
 
 def multiplicar_matrices_con_modulo(matriz_a, matriz_b, modulo):
     numero_filas_a, numero_columnas_a = len(matriz_a), len(matriz_a[0])
