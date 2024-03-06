@@ -73,3 +73,23 @@ solucionarRompecabezas(10** 4) :  6670425081 tiempo:  0.02800154685974121
 solucionarRompecabezas(10** 5) :  3336919761 tiempo:  1.7640049457550049
 solucionarRompecabezas(10** 6) :  1840355025 tiempo:  194.54952764511108
 ```	
+
+Como podemos observar, el tiempo de ejecución aumenta significativamente, por lo que se hace necesario buscar una forma de optimizar el cálculo de la función `solucionarRompecabezas`.
+
+## Perspectiva matemática
+
+Notemos que la sucesión se puede representar matemáticamente como:
+
+```
+an+4 = 3 * an-1 + 1 * an-2 + 4 * an-3 + 1 * an-4
+```
+Se puede fácilmente observar que la sucesión es una sucesión lineal de 4 términos, por lo que podemos abordar el cálculo de la sucesión de forma matricial.
+
+De la siguiente manera:
+
+![Sistema matricial](/imagenes/matriz_sistema.png)
+
+Siendo a_0, a_1, a_2, a_3 los valores que acompañan los coeficientes de la ecuación de recurrencia.
+
+Es decir a_0 = 1, a_1 = 4, a_2 = 1, a_3 = 3
+
