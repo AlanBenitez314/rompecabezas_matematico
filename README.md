@@ -66,5 +66,10 @@ for i in range(1,7):
 
 
 ```
-solucionarRompecabezas(10** 1 ) :  902441 tiempo:  0.0                                                                  solucionarRompecabezas(10** 2 ) :  8042318513 tiempo:  0.0                                                              solucionarRompecabezas(10** 3 ) :  5707087785 tiempo:  0.0                                                              solucionarRompecabezas(10** 4 ) :  6670425081 tiempo:  0.02800154685974121                                              solucionarRompecabezas(10** 5 ) :  3336919761 tiempo:  1.7640049457550049                                               solucionarRompecabezas(10** 6 ) :  1840355025 tiempo:  194.54952764511108
+solucionarRompecabezas(10** 1 ) :  902441 tiempo:  0.0
+solucionarRompecabezas(10** 2 ) :  8042318513 tiempo:  0.0
+solucionarRompecabezas(10** 3 ) :  5707087785 tiempo:  0.0
+solucionarRompecabezas(10** 4 ) :  6670425081 tiempo:  0.02800154685974121
+solucionarRompecabezas(10** 5 ) :  3336919761 tiempo:  1.7640049457550049
+solucionarRompecabezas(10** 6 ) :  1840355025 tiempo:  194.54952764511108
 ```	
