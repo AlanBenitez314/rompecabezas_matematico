@@ -81,7 +81,7 @@ Como podemos observar, el tiempo de ejecución aumenta significativamente, por l
 Notemos que la sucesión se puede representar matemáticamente como:
 
 ```
-an+4 = 3 * an-1 + 1 * an-2 + 4 * an-3 + 1 * an-4
+an+4 = 3 * an+3 + 1 * an+2 + 4 * an+1 + 1 * an 
 ```
 Se puede fácilmente observar que la sucesión es una sucesión lineal de 4 términos, por lo que podemos abordar el cálculo de la sucesión de forma matricial.
 
@@ -89,7 +89,7 @@ De la siguiente manera:
 
 ![Sistema matricial](/imagenes/matriz_sistema.png)
 
-Siendo a_0, a_1, a_2, a_3 los valores que acompañan los coeficientes de la ecuación de recurrencia.
+Siendo alpha_0, alpha_1, alpha_2, alpha_3 los valores que acompañan los coeficientes de la ecuación de recurrencia.
 
-Es decir a_0 = 1, a_1 = 4, a_2 = 1, a_3 = 3
+Es decir alpha_0 = 1, alpha_1 = 4, alpha_2 = 1, alpha_3 = 3
 
