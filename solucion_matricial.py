@@ -16,7 +16,7 @@ def multiplicar_matrices_con_modulo(matriz_a, matriz_b, modulo):
         resultado.append(fila_resultado)
     return resultado
 
-def elevar_matriz_a_potencia_con_modulo(matriz, potencia, modulo):
+def elevar_matriz_modulo(matriz, potencia, modulo):
     resultado = []
     for i in range(len(matriz)):
         fila_identidad = []
@@ -35,7 +35,7 @@ def elevar_matriz_a_potencia_con_modulo(matriz, potencia, modulo):
     return resultado
 
 def solucionarRompecabezas(numero_iteraciones, modulo=10000000000):
-    matriz_transformacion = [
+    matriz = [
         [0, 1, 0, 0],
         [0, 0, 1, 0],
         [0, 0, 0, 1],
@@ -43,7 +43,7 @@ def solucionarRompecabezas(numero_iteraciones, modulo=10000000000):
     ]
 
     valores_iniciales = [1, 1, 1, 1]
-    valores_finales = elevar_matriz_a_potencia_con_modulo(matriz_transformacion, numero_iteraciones, modulo)
+    valores_finales = elevar_matriz_modulo(matriz, numero_iteraciones, modulo)
     resultado_final = 0
     for i in range(4):
         resultado_final = resultado_final + (valores_finales[3][i] * valores_iniciales[i])
